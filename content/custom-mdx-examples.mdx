@@ -1,211 +1,128 @@
 ---
-title: "Custom MDX Examples"
-publishedAt: "2024-08-11"
-summary: "Nextfolio custom MDX examples."
-tags: "Custom MDX, Web development"
+title: 'The Power Of Git'
+publishedAt: '2025-01-12'
+summary: 'Git usage'
+tags: 'Git development usage'
 ---
 
-Nextfolio uses [custom MDX](https://github.com/1msirius/Nextfolio/blob/main/app/components/mdx.tsx) for blog posts, making it easy to include JSX components such as interactive embeds, charts, or alerts directly in your markdown content.
+Did you know that 98% of the project the git is involved?
 
-Here are some examples of using MDX:
+When I work as desktop support as my first job. I will make a time to learn with the developers in our department.
+My interest and willing to get back in programming made me curious of how they solve a certain problems.
+It's cool and a great responsibility at the same time, as I saw the terminal they type in the commandline.
+I understand that I should be flexible using tools.
 
-## h2 Heading
+And the one thing should I learn is [git](https://git-scm.com/).
 
-### h3 Heading
-
-#### h4 Heading
-
-##### h5 Heading
-
-## Emphasis
-
-**This is bold text**
-
-_This is italic text_
-
-<del> Strikethrough </del>
-
-## Blockquotes
-
-> If today were the last day of my life, would I want to do what I am about to do today? – Steve Jobs
-
-## Links
-
-- Nextfolio is built with [Next.js](https://nextjs.org).
-- Nextfolio uses [pnpm](https://pnpm.io/) for package management.
-
-## CodeBlocks
+### Git Workflow: One-time Setup
 
 ```
-// This is commented-out code
-export default function HelloWorld() {
-  return (
-    <h1>Hello, World!</h1>
-  );
-}
+  git clone https://github.com/repository-guide.git
+  cd repo
+  git remove -v  # View remotes
 ```
 
-## Images
-
-Nextfolio uses [Next.js Image](https://nextjs.org/docs/basic-features/image-optimization) in MDX for seamless image rendering:
+If you're contributing in an Open-Source.
 
 ```
-<Image
-  src="/opengraph-image.png"
-  alt="OpenGraph image"
-  width={640}
-  height={500}
-/>
+  git clone https://github.com/your-username/repository.git
+  cd repo
+  git remote add upstream https://github.com/original-owner/repository.git
 ```
 
-Renders:
-
-<Image
-  src="/opengraph-image.png"
-  alt="OpenGraph image"
-  width={640}
-  height={500}
-/>
-
-## Image Grid
-
-Nextfolio uses a custom [image grid component](https://github.com/1msirius/Nextfolio/blob/main/app/components/image-grid.tsx) to display image galleries.
+**Daily Start**
 
 ```
-<ImageGrid
-  columns={3} // Accepts 2, 3, or 4 columns
-  images={[
-    { src: "/photos/photo1.jpg", alt: "Photo1", href: "#" }, // 'href' is optional
-    { src: "/photos/photo2.jpg", alt: "Photo2", href: "#" },
-    { src: "/photos/photo3.jpg", alt: "Photo3"},
-  ]}
-/>
+  # Team project
+  git pull origin main
+
+  # Open-Source
+  git fetch upstream
+  git checkout main
+  git merge upstream/main
 ```
 
-Renders:
-
-<ImageGrid
-  columns={3}
-  images={[
-    { src: "/photos/photo1.jpg", alt: "Photo1", href: "#" },
-    { src: "/photos/photo2.jpg", alt: "Photo2", href: "#" },
-    { src: "/photos/photo3.jpg", alt: "Photo3" },
-  ]}
-/>
-
-## Embeds
-
-### Tweets
-
-Nextfolio uses [react-tweet](https://react-tweet.vercel.app/) to embed tweets in MDX posts.
+**Create a Feature or BugFix Branch**
 
 ```
-<StaticTweet id="1617979122625712128" />
+  git checkout -b feature/your-feature-branch
 ```
 
-Renders:
+> feature/ - for new features
 
-<StaticTweet id="1617979122625712128" />
+> fix/ - for bug fixes
 
-### YouTube Videos
+> hotfix/ - for critical fixes
 
-Nextfolio uses [react-youtube](https://www.npmjs.com/package/react-youtube) to embed YouTube videos in MDX posts.
-
-```
-<YouTube videoId="wXhTHyIgQ_U" />
-```
-
-Renders:
-
-<YouTube videoId="wXhTHyIgQ_U" />
-
-### Captions
-
-Nextfolio uses [react-wrap-balancer](https://react-wrap-balancer.vercel.app/) to evenly balance captions in MDX posts.
+**Code & Track Changes**
 
 ```
-<Caption>
-  Captions that flow smoothly, making your content easy to read and visually
-  appealing with a clean look.
-</Caption>
-```
-
-Renders:
-
-<Caption>
-  Captions that flow smoothly, making your content easy to read and visually
-  appealing with a clean look.
-</Caption>
-
-## Tables
-
-Nextfolio uses a custom [table component](https://github.com/1msirius/Nextfolio/blob/main/app/components/mdx.tsx#L38) to render tables in MDX posts.
+  git status  # Check status, changes, and untracked files
+  git add .   # Stage all changes
+  git commit -m "Your commit message"  # Commit changes with a message
 
 ```
-<Table
-  data={{
-    headers: ["Title", "Description"],
-    rows: [
-      [
-        "First item",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid perspiciatis repellat amet quos.",
-      ],
-      [
-        "Second item",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid perspiciatis repellat amet quos.",
-      ],
-    ],
-  }}
-/>
-```
 
-Renders:
+NOTE: Commit messages should be clear
+Use Imperative: "Add login feature"
+Reference Issue Numbers: Fix #001: Handle empty states.
 
-<Table
-  data={{
-    headers: ["Title", "Description"],
-    rows: [
-      [
-        "First item",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid perspiciatis repellat amet quos.",
-      ],
-      [
-        "Second item",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid perspiciatis repellat amet quos.",
-      ],
-    ],
-  }}
-/>
-
-## Math Expressions
-
-Nextfolio allows you to render mathematical expressions in MDX posts using [KaTeX](https://katex.org/) . Simply wrap your expression in **$** to include KaTeX within your MDX content.
+**Push Branches**
 
 ```
-$
-\int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}
-$
+  git push origin feature/your-feature-repo
 ```
 
-Renders:
+Create a Pull Request
 
-$
-\int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}
-$
+1. Go to GitHub
+2. Open a Pull Request from your branch to main or develop
+3. Add a Description, Screenshots and linked issues.
 
-## Callout
-
-Nextfolio uses a custom [callout component](https://github.com/1msirius/Nextfolio/blob/main/app/components/mdx.tsx#L63) to render important information in MDX posts.
+**Merge**
 
 ```
-<Callout emoji="💡">
-[Nextfolio](https://nextfolio.site) is a clean, simple, and fast portfolio built with Next.js, Tailwind CSS, and pnpm for optimal performance.
-</Callout>
+  git checkout main
+  git pull origin main
+  git merge feature/your-feature-name
+  git push origin main
+
 ```
 
-Renders:
+Optionally, you can delete the branch after merge.
 
-<Callout emoji="💡">
-  [Nextfolio](https://nextfolio.site) is a clean, simple, and fast portfolio
-  built with Next.js, Tailwind CSS, and pnpm for optimal performance.
-</Callout>
+Why?
+
+This is the [reason](https://medium.com/@pipulpant/why-you-should-delete-merged-branches-in-git-c04f3f5d5948).
+
+```
+  git branch -d feature/your-feature-name
+  git push origin --delete feature/your-feature-name
+
+```
+
+**Cleanup**
+
+```
+  git fetch -p    # Remove deleted branches from remote
+  git branch -a   # List all branches
+```
+
+**Undo or Roll Back (Safe Tools)**
+
+```
+  git log         # View Commit History
+  git checkout   # View code from older commit
+  git revert      # Undo with a new commit
+```
+
+**Tip:**
+
+1. Use .gitignore to avoid committing unwanted files.
+2. Make Atomic Commits: One logical change per commit.
+3. Pull before pushing to avoid conflicts.
+4. Resolve conflicts carefully, then git add and git commit
+
+If ever I wanted to practice and check my git expertise.
+
+I play this [git website](https://learngitbranching.js.org/) as my refresher

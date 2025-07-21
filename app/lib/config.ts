@@ -1,16 +1,14 @@
 export const metaData = {
-  baseUrl: "https://nextfolio-template.vercel.app/",
-  title: "Nextfolio",
-  name: "Sirius",
-  ogImage: "/opengraph-image.png",
+  baseUrl: 'https://nextfolio-template.vercel.app/',
+  title: 'thedevcristian',
+  name: 'Cristian Paul Castañeda',
+  ogImage: 'tdc.png',
   description:
-    "A clean, fast, and lightweight portfolio template built with Next.js, Vercel, and Tailwind CSS for optimal performance.",
+    'thedevcristian - Portfolio website of Cristian, a web developer specializing in front-end development.',
 };
 
 export const socialLinks = {
-  twitter: "https://x.com/1tssirius",
-  github: "https://github.com/1msirius/Nextfolio",
-  instagram: "https://www.instagram.com/",
-  linkedin: "https://www.linkedin.com/",
-  email: "mailto:example@gmail.com",
+  github: 'https://github.com/crispaulcastaneda',
+  linkedin: 'https://www.linkedin.com/in/crispaulcastaneda/',
+  email: 'mailto:cristianpaul_c@yahoo.com',
 };

@@ -1,0 +1,113 @@
+---
+title: 'CSS Position'
+publishedAt: '2020-06-02'
+summary: 'Insight from my experience using CSS Positions'
+tags: 'CSS, Stylesheet'
+---
+
+Positioning help us to control our elements into a place.
+
+Here are the different types of positioning:
+
+```
+position: static; /* default */
+position: relative;
+position: absolute;
+position: sticky;
+position: fixed;
+
+```
+
+### Static
+
+![Visual - Static](https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2Fgapi4c3cx3i6n77bqcvd.png)
+
+A default position in every situation. It is always positioned according to the normal page.
+
+> Will it change if I position the element on top, right, bottom or left?
+
+> NO , it will become stated if you can position the element.
+
+note: this is not should be declared in css as if this is the default setup.
+
+### Relative
+
+![Visual - Relative](https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2Ft0qlqhjkl81mn4u4pme6.png)
+
+A positioned relative to its normal position. It allows to direct in every position we decided.
+When we don't declare any value to a position, it'll act like it's Static
+We can use the top, right, bottom and left position to push every element.
+
+### Absolute
+
+![Visual - Absolute](https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2F90lyof7dh7si73ln1xyp.png)
+
+A position that can remove the Element from the document flow and position itself in reference to a container and a container has to have a position assigned to it as well.
+A container element has a relative position wonder why it is centered in the browser.
+The text overlaps the image, just because both have positioned in Absolute
+
+### Sticky
+
+![Visual - Sticky](https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2Fl7du24xrbje8jo7kchi1.png)
+
+> Sticky positioning is a hybrid of relative and fixed positioning. The element is treated as relative positioned until it crosses a specified threshold, at which point it is treated as fixed positioned. - Mozilla Foundation, MDN Web docs
+
+The nav-bar container(parent) with icon(child) and navigation(child) set to sticky position
+
+As you scroll the browser, the sticky container will continue appear as it flows.
+
+At the initial of code the padding of your element will not set to auto
+you need to declare:
+
+```
+  nav-bar {
+  /* using vendor-prefixed (-webkit and -moz) for specific browser */
+    position: -webkit-sticky;    /* for chrome browser */
+    position: -moz-sticky;       /* for mozilla browser */
+    position: sticky;
+    top: 0;
+    overflow: hidden;    /* to fix the height of the container */
+  }
+```
+
+Declared the overflow property.
+
+> Question: Why it doesn't work?
+
+> Answer: your browser is not supported.
+
+Kindly check [caniuse](https://caniuse.com/)
+
+### Fixed
+
+![Visual - Fixed](https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2Fef1rsq4ot066o11ewd7b.png)
+
+Similar to position absolute, an element that has fixed position is taken out of the document flow. The major difference is: elements with position fixed is always positioned relative to the browser window.
+
+I removed the paragraph element to a container and the result is container(parent) with an image(child) overlaps the paragraph.
+
+## How about the other attributes?
+
+Inherit a position with the same value from its parent.
+
+```
+  parent-element {
+    padding: 15px;
+  }
+
+  child-element {
+    padding: inherit;
+  }
+```
+
+![Visual - Attributes](https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2Fmvqqxlort5g6n418woqt.png)
+
+The top, right, bottom and left It give us the permission to place every element with a set position e.g. Relative, Absolute and Fixed.
+
+(-) Negative values for an attribute is accepted.
+
+The z-index property manipulates the vertical stacking order of elements that overlap
+
+![Visual](https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2Fvrjaapzfvdnmxpigzv8g.png)
+
+For more content in my portfolio. You may visit the page from [dev.to](https://dev.to/thedevcristian/position-is-everything-164k)
