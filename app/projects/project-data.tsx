@@ -10,13 +10,13 @@ export const projects: Project[] = [
     title: 'Frontend Dev | Maria Ozawa Website',
     year: 2022,
     description: 'iGaming Partnership Website',
-    url: 'https://project1.clientbeta.tech/',
+    url: 'https://github.com/crispaulcastaneda/landing-page-mo',
   },
   {
     title: 'FullStack Dev | Guess The NBA Champion',
     year: 2025,
     description: 'Interactive landing page for a game',
-    url: 'https://project5.clientbeta.tech/',
+    url: 'https://github.com/crispaulcastaneda/guess-the-winner',
   },
   {
     title: 'WordPress Dev | MSEG ',
