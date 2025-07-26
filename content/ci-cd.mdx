@@ -1,0 +1,123 @@
+---
+title: 'CI/CD Uses'
+publishedAt: '2025-07-26'
+summary: 'The uses of CI/CD in development.'
+tags: 'DevOps, CI/CD, GitHub Actions'
+---
+
+As I enter the new era of development. CI/CD is a must-have for modern engineers. It improves code quality and saves time. Starting a simple, automate things, and expand.
+
+# What is CI/CD?
+
+**CI/CD** stands for
+
+- CI (Continuous Integration): Automatically test the code when changes are deployed.
+- CD (Continuous Development/Delivery): Automatically build and deploy the app for testing.
+
+## Tools can be use
+
+- GitHub - hosting repo and run Actions
+- VS code - to write code and create workflow files.
+- Git - to track changes and push to GitHub.
+- Vercel - This is already integrating with Git repositories.
+
+## Step-by-Step
+
+My step-by-step guide when I am making a new repository and personal projects.
+
+1. Create a GitHub repository
+   - Click **new** -> Name of the repo -> Add **README.md**
+   - Clone the repository:
+   ```
+       git clone https://github.com/username/repository.git
+       cd repository
+   ```
+
+## Setup the project
+
+I can use any project - for example, a PHP or node.js app. Here's an example using PHP.
+
+This is a manual setup
+
+1. Inside my repo, I create:
+   ```
+   touch index.php composer.json
+   ```
+2. I add a simple PHP file and install dependencies if needed.
+
+This is a setup from GitHub Actions
+
+1. Inside the repository, click the _Actions_ tab
+2. Search workflow. For example: PHP
+3. Tap / Click **Configure**
+4. Wait for the workflow finish the deployment.
+5. Once the workflow deployed. Pull the updates from your local. Run the terminal and type:
+   ```
+       composer init
+   ```
+6. It will add new compose description. Fill the questions.
+
+## Create the GitHub Action Workflow
+
+For Manual set up post. Inside the project, create the directory and file:
+
+```
+ mkdir -p .github/workflows
+ touch .github/workflows/ci.yml
+```
+
+```
+name: PHP CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+
+      - name: Validate composer.json and composer.lock
+        run: composer validate
+
+      - name: Run tests (if any)
+        run: phpunit
+
+```
+
+> You can modify this workflow for JS, Python, etc.
+
+## Commit and Push to GitHub
+
+In VS Code Terminal
+
+```
+ git add.
+ git commit -m "Description here"
+ git push origin main
+```
+
+Once the changes deployed to the repository, go to your **GitHub Repo -> Actions Tab** check the workflow running.
+
+## Optional: Add a simple test.
+
+If your app has tests. GitHub actions will run automatically. Just make sure your app builds successfully.
+
+### Final Notice
+
+If you successfully work with the CI/CD Actions. The next steps you can try is
+
+- Add testing
+- Set up deployment (CD)
+- Use secrets for environment variables.
