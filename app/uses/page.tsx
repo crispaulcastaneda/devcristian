@@ -15,7 +15,7 @@ export default function Uses() {
         <h3>Hardware Tools</h3>
 
         <ul>
-          <li>Machine: Macbook M4 Air 13" 256GB</li>
+          <li>Machine: Macbook M4 Air 13" 16GB</li>
           <li>Keyboard: UGREEN 5.0 BT Wireless</li>
           <li>Mouse: UGREEN 5.0 BT Wireless 4000 DPI</li>
         </ul>
