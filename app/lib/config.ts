@@ -1,10 +1,19 @@
 export const metaData = {
-  baseUrl: 'https://nextfolio-template.vercel.app/',
+ baseUrl: 'https://thedevcristian.com',
   title: 'thedevcristian',
-  name: 'Cristian Paul Castañeda',
+  name: 'AstroFolio',
   ogImage: 'tdc.png',
-  description:
-    'thedevcristian - Portfolio website of Cristian, a web developer specializing in front-end development.',
+  description:'Software Engineer',
+  openGraph: {
+    title: 'thedevcristian.com',
+    image: 'tdc.png',
+    type: 'website',
+    url: 'https://thedevcristian.com',
+  },
+  robots: {
+    name: 'robots',
+    content: 'index, follow',
+  },
 };
 
 export const socialLinks = {

@@ -1,5 +1,5 @@
-import { ImageResponse } from "next/og";
 import { metaData } from "app/lib/config";
+import { ImageResponse } from "next/og";
 
 export function GET(request: Request) {
   let url = new URL(request.url);

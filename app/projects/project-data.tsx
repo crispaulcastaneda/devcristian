@@ -18,7 +18,7 @@ export const projects: Project[] = [
     description: 'Mansion Sports & Entertainment Group',
     url: 'https://mansionsports.com/',
   },
-    {
+  {
     title: 'Frontend Dev | Maria Ozawa Website',
     year: 2022,
     description: 'iGaming Partnership Website',
