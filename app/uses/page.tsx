@@ -78,7 +78,7 @@ export default function Uses() {
       <div className="prose prose-neutral dark:prose-invert">
         <h3>Technologies</h3>
         <ul>
-          <li>Frontend: <span className="text-neutral-600 dark:text-neutral-400">HTML5, CSS3, JavaScript, jQuery, React.js, Next.js</span></li>
+          <li>Frontend: <span className="text-neutral-600 dark:text-neutral-400">HTML5, CSS3, Tailwind, JavaScript, jQuery, React.js, Next.js</span></li>
           <li>Backend: <span className="text-neutral-600 dark:text-neutral-400">JSON, Node.js, PHP, C#</span></li>
           <li>Database: <span className="text-neutral-600 dark:text-neutral-400">MySQL, Apache</span></li>
           <li>API Tools: <span className="text-neutral-600 dark:text-neutral-400">Postman</span></li>
