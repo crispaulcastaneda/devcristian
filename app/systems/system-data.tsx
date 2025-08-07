@@ -7,7 +7,7 @@ export interface System {
 
 export const systems: System[] = [
   {
-    title: 'Chat Application',
+    title: 'Chat Application (On going)',
     year: 2025,
     description: 'Interactive chat application with real-time messaging',
     url: 'https://github.com/crispaulcastaneda/cheese-miss.git',
