@@ -78,8 +78,8 @@ export default function Uses() {
       <div className="prose prose-neutral dark:prose-invert">
         <h3>Technologies</h3>
         <ul>
-          <li>Frontend: <span className="text-neutral-600 dark:text-neutral-400">HTML5, CSS3, Tailwind, JavaScript, jQuery, React.js, Next.js</span></li>
-          <li>Backend: <span className="text-neutral-600 dark:text-neutral-400">JSON, Node.js, PHP, C#</span></li>
+          <li>Frontend: <span className="text-neutral-600 dark:text-neutral-400">HTML5, CSS3, Tailwind, JavaScript, jQuery, React.js, Next.js, TypeScript</span></li>
+          <li>Backend: <span className="text-neutral-600 dark:text-neutral-400">JSON, Node.js, PHP</span></li>
           <li>Database: <span className="text-neutral-600 dark:text-neutral-400">MySQL, Apache</span></li>
           <li>API Tools: <span className="text-neutral-600 dark:text-neutral-400">Postman</span></li>
           <li>Version Control: <span className="text-neutral-600 dark:text-neutral-400">Git, GitHub, SVN, Vercel</span></li>
@@ -88,7 +88,7 @@ export default function Uses() {
           <li>UX UI Design: <span className="text-neutral-600 dark:text-neutral-400">Figma, Zeplin</span></li>
           <li>Deployment: <span className="text-neutral-600 dark:text-neutral-400">Plesk, AWS</span></li>
           <li>CI/CD & DevOps: <span className="text-neutral-600 dark:text-neutral-400">Docker, GitHub Actions</span></li>
-          <li>Collab Tools: <span className="text-neutral-600 dark:text-neutral-400">Trello, Jira(Kanban), Teams</span></li>
+          <li>Collab Tools: <span className="text-neutral-600 dark:text-neutral-400">Trello, Jira (Kanban), Teams</span></li>
         </ul>
       </div>
     </section>

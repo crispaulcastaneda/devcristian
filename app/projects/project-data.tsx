@@ -7,6 +7,12 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: 'Chat Application (On going)',
+    year: 2025,
+    description: 'Interactive chat application with real-time messaging',
+    url: 'https://github.com/crispaulcastaneda/cheese-miss.git',
+  },
+  {
     title: 'FullStack Dev | Guess The NBA Champion',
     year: 2025,
     description: 'Interactive landing page for a game',

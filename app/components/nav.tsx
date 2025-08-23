@@ -5,7 +5,7 @@ import { metaData } from '../lib/config';
 const navItems = {
   '/blog': { name: 'Blog' },
   '/projects': { name: 'Projects' },
-  'systems': {name: 'Systems'},
+  'systems': {name: 'Freelance'},
   '/uses': { name: 'Uses' },
 };
 
