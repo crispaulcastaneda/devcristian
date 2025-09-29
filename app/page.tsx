@@ -13,12 +13,10 @@ export default function Page() {
         height={100}
         priority
       />
-      <h1 className="mb-8 text-2xl font-medium">Hi, I'm Paul!</h1>
+      <h1 className="mb-8 text-2xl font-medium">Hi, I'm Cristian Paul 👋🏼</h1>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          I'm a web developer with hands-on experience in both front-end and
-          back-end technologies, especially focused on creating seamless user
-          experiences.
+          I work as a <strong>Web Developer</strong>, constantly exploring front-end, back-end, web security, and system architecture to strengthen my <strong>software development</strong> skills.
         </p>
       </div>
     </section>
