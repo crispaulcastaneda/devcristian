@@ -27,8 +27,11 @@ export default function Projects() {
                 {project.year}
               </p>
             </div>
-            <p className="text-neutral-600 dark:text-neutral-400">
+            <p className="text-neutral-700 dark:text-neutral-400 text-sm">
                 {project.description}
+            </p>
+            <p className="text-neutral-500 dark:text-neutral-500 text-xs">
+                {project.tech}
               </p>
           </Link>
         ))}
