@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { socialLinks } from './lib/config';
 
 export default function Page() {
   return (
@@ -16,7 +15,7 @@ export default function Page() {
       <h1 className="mb-8 text-2xl font-medium">Hi, I'm Cristian Paul 👋🏼</h1>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          I work as a <strong>Web Developer</strong>, constantly exploring front-end, back-end, web security, and system architecture to strengthen my <strong>software development</strong> skills.
+          I work as a <strong>Web Developer</strong> at <strong><a href="https://www.n-able.com/">N-able</a></strong>, constantly exploring front-end, back-end, cybersecurity, and system architecture to strengthen my <strong>Software Development</strong> skills.
         </p>
       </div>
     </section>
