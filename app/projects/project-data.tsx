@@ -36,7 +36,7 @@ export const projects: Project[] = [
     tech: 'WordPress, PHP, MySQL, JS',
   },
   {
-    title: 'Frontend | Maria Ozawa Website',
+    title: 'Front-End | Maria Ozawa Website',
     year: 2022,
     description: 'iGaming Partnership Website',
     url: 'https://github.com/crispaulcastaneda/landing-page-mo',
