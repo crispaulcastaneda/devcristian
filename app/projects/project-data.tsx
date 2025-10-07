@@ -8,6 +8,13 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: 'Front-End | https://bettergov.ph',
+    year: 2025,
+    description: 'Philippines National Website',
+    url: 'https://github.com/bettergovph',
+    tech: 'Vite | JS, react.js, typescript, tailwindcss, CI/CD',
+  },
+  {
     title: 'Full Stack | Cheesemiss',
     year: 2025,
     description: 'Interactive chat application with real-time messaging',
