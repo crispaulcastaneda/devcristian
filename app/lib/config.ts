@@ -19,5 +19,5 @@ export const metaData = {
 export const socialLinks = {
   github: 'https://github.com/crispaulcastaneda',
   linkedin: 'https://www.linkedin.com/in/crispaulcastaneda/',
-  email: 'mailto:cristianpaul_c@outlook.com',
+  email: 'mailto:cristianpaul_c@yahoo.com',
 };
