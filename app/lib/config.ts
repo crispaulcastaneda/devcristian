@@ -1,9 +1,9 @@
 export const metaData = {
- baseUrl: 'https://thedevcristian.com',
+  baseUrl: 'https://thedevcristian.com',
   title: 'thedevcristian',
   name: 'AstroFolio',
   ogImage: 'tdc.png',
-  description:'Software Engineer',
+  description: 'Software Engineer',
   openGraph: {
     title: 'thedevcristian.com',
     image: 'tdc.png',
@@ -19,5 +19,5 @@ export const metaData = {
 export const socialLinks = {
   github: 'https://github.com/crispaulcastaneda',
   linkedin: 'https://www.linkedin.com/in/crispaulcastaneda/',
-  email: 'mailto:cristianpaul_c@yahoo.com',
+  email: 'mailto:cristianpaul_c@outlook.com',
 };
